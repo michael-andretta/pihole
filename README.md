@@ -1,7 +1,7 @@
 # pihole
 ### Links for Lists
-https://firebog.net/
-https://github.com/anudeepND/whitelist
+https://firebog.net/<br>
+https://github.com/anudeepND/whitelist<br>
 
 ### Updates
 https://github.com/jacklul/pihole-updatelists
