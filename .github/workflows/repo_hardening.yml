@@ -1,0 +1,24 @@
+---
+name: Enforce Repository Hardening
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  enforce_repo_hardening:
+    runs-on: ubuntu-latest
+    environment: all_environment
+    steps:
+      - name: Checkout Hardening Action
+        uses: actions/checkout@v2
+        with:
+          repository: michael-andretta/network-actions
+          token: ${{ secrets.ADMIN_TOKEN }}
+          path: ./network-actions
+
+      - name: Enforce Repository Hardening
+        uses: ./network-actions/repo_hardening
+        env:
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+...
