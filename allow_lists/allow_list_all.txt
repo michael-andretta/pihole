@@ -1,0 +1,8 @@
+(\.|^)redgifs\.com$	
+(\.|^)emjcd\.com$
+(\.|^)dotomi\.com$
+(\.|^)pinterest\.com$
+(\.|^)discord\.com$
+(\.|^)anrdoezrs\.net$
+(\.|^)youngliving\.com$
+(\.|^)fidelityinvestments\.com$
