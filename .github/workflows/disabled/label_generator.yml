@@ -1,0 +1,34 @@
+---
+name: Create Github Labels
+on:
+  schedule:
+    - cron: '0 0/2 * * *' # Run every 2 hours
+
+jobs:
+  label_generator:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout 'Changed' Branch from GitHub Repo
+        uses: actions/checkout@v3
+        with:
+          ref: main
+          path: main/
+
+      - name: Checkout network-actions Repository
+        uses: actions/checkout@v3
+        with:
+          repository: michael-andretta/network-actions
+          token: ${{ secrets.ADMIN_TOKEN }}
+          path: network-actions/
+
+      - name: Run Label Generator
+        run: |
+            ls -lsah /
+            chmod 700 ./network-actions/github_label_standard/main.py
+            python3 ./network-actions/github_label_standard/main.py
+        env:
+          PULL_NUMBER: ${{ github.event.pull_request.number }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          LABEL_FILE: ./github/workflows/labels.yml
