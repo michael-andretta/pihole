@@ -1,5 +1,16 @@
 # Pi-hole Configuration Repository
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub last commit](https://img.shields.io/github/last-commit/michael-andretta/archive?style=flat)](https://github.com/michael-andretta/archive)
+[![GitHub repo size](https://img.shields.io/github/repo-size/michael-andretta/archive?style=flat)](https://github.com/michael-andretta/archive)
+[![GitHub issues](https://img.shields.io/github/issues/michael-andretta/archive?style=flat)](https://github.com/michael-andretta/archive/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/michael-andretta/archive?style=flat)](https://github.com/michael-andretta/archive/pulls)
+[![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/michael-andretta/archive)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/michael-andretta/archive/pulls)
+[![Pi-hole](https://img.shields.io/badge/Pi--hole-v5.0+-red.svg)](https://pi-hole.net/)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg)](#)
+[![Documentation](https://img.shields.io/badge/Documentation-Complete-brightblue.svg)](./docs/)
+
 A curated collection of configurations, blocklists, and resources for Pi-hole DNS filtering and ad-blocking.
 
 ## ⚠️ Disclaimer
