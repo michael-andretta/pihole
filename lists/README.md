@@ -90,6 +90,127 @@ tracker.example.com
 analytics.example.com
 ```
 
+## Recommended Public Blocklists
+
+Below are tested and working blocklists that can be added to Pi-hole:
+
+### Advertising & General Purpose
+
+- **StevenBlack/hosts** (Comprehensive ad blocking)
+  - URL: `https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts`
+  - Popular and widely used
+
+- **AdAway** (Ad blocking)
+  - URL: `https://adaway.org/hosts.txt`
+  - Well-maintained and reliable
+
+- **Firebog Easylist** (Advertising)
+  - URL: `https://v.firebog.net/hosts/Easylist.txt`
+  - Excellent coverage for ads
+
+- **Firebog Admiral** (Ad blocking)
+  - URL: `https://v.firebog.net/hosts/Admiral.txt`
+  - Lightweight option
+
+- **Sysctl.org Cameleon** (General purpose)
+  - URL: `http://sysctl.org/cameleon/hosts`
+  - Regular updates
+
+### Tracking & Telemetry
+
+- **Firebog Easyprivacy** (Tracking protection)
+  - URL: `https://v.firebog.net/hosts/Easyprivacy.txt`
+  - Prevents tracker connections
+
+- **Firebog Prigent-Ads** (Tracking & ads)
+  - URL: `https://v.firebog.net/hosts/Prigent-Ads.txt`
+  - Combined protection
+
+- **WindowsSpyBlocker** (Telemetry blocking)
+  - URL: `https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt`
+  - Blocks Windows telemetry
+
+- **Perflyst PiHole Blocklist - Android Tracking**
+  - URL: `https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/android-tracking.txt`
+  - Android device tracking
+
+### Malware & Security
+
+- **Firebog Prigent-Malware** (Malware blocking)
+  - URL: `https://v.firebog.net/hosts/Prigent-Malware.txt`
+  - Malicious domain blocking
+
+- **Firebog RPiList-Malware** (Raspberry Pi list)
+  - URL: `https://v.firebog.net/hosts/RPiList-Malware.txt`
+  - Pi-hole optimized malware list
+
+- **Phishing Army** (Phishing protection)
+  - URL: `https://phishing.army/download/phishing_army_blocklist_extended.txt`
+  - Extended phishing database
+
+- **URLhaus Malware** (Malware URLs)
+  - URL: `https://urlhaus.abuse.ch/downloads/hostfile/`
+  - Tracks malware distribution sites
+
+- **Firebog Prigent-Crypto** (Cryptominer blocking)
+  - URL: `https://v.firebog.net/hosts/Prigent-Crypto.txt`
+  - Blocks cryptocurrency miners
+
+### Spam & Suspicious
+
+- **KADhosts** (Spam & suspicious)
+  - URL: `https://raw.githubusercontent.com/PolishFiltersTeam/KADhosts/master/KADhosts.txt`
+  - Comprehensive spam blocking
+
+- **Spam404** (Malicious content)
+  - URL: `https://raw.githubusercontent.com/Spam404/lists/master/main-blacklist.txt`
+  - Blacklist of malicious domains
+
+- **NoTrack Blocklist** (General purpose)
+  - URL: `https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-blocklist.txt`
+  - Well-maintained blocklist
+
+- **NoTrack Malware** (Malware specific)
+  - URL: `https://gitlab.com/quidsup/notrack-blocklists/raw/master/notrack-malware.txt`
+  - Malware-focused list
+
+### Specialized Lists
+
+- **Social Media Blocking** (Facebook tracking)
+  - URL: `https://raw.githubusercontent.com/anudeepND/blacklist/master/facebook.txt`
+  - Blocks Facebook trackers
+
+- **Chad Mayfield's Porn Blocklist** (Adult content)
+  - URL: `https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_all.list`
+  - Comprehensive adult content blocking
+
+- **Perflyst SmartTV Blocklist** (Smart TV tracking)
+  - URL: `https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV.txt`
+  - Blocks Smart TV telemetry
+
+- **Perflyst Amazon Fire TV Blocklist**
+  - URL: `https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/AmazonFireTV.txt`
+  - Fire TV tracking blocking
+
+### Whitelists (Allowlists)
+
+- **anudeepND Whitelist** (Popular services)
+  - URL: `https://github.com/anudeepND/whitelist`
+  - Prevents false positives for common services
+
+## Quick Addition Guide
+
+To add any of these lists to your Pi-hole:
+
+1. Copy the URL from above
+2. Go to Pi-hole Admin Dashboard → **Adlists**
+3. Click **Add New Adlist**
+4. Paste the URL
+5. Add a descriptive comment (optional)
+6. Click **Add**
+
+Pi-hole will automatically check and sync these lists based on your configured update frequency.
+
 ## Syncing with Pi-hole
 
 ### Using Pi-hole's Web Interface
