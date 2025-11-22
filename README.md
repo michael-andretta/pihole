@@ -14,6 +14,23 @@ A curated collection of configurations, blocklists, and resources for Pi-hole DN
 
 **Before deploying to production**, thoroughly test all configurations and blocklists on a test system or Pi-hole installation.
 
+
+## Additional Notice for Pi-hole Configurations
+
+This repository provides configurations and blocklists for Pi-hole. Please note:
+
+- Use these configurations at your own risk
+- Test in a non-production environment before deploying
+- Blocklists may cause false positives; maintain an allowlist as needed
+- The authors are not responsible for any network disruptions or service interruptions
+- Pi-hole itself is a separate project with its own licensing (see https://pi-hole.net/)
+
+## Third-Party Blocklists
+
+Many of the blocklists referenced in this repository are provided by external sources
+and may have their own licenses. Please review the individual list repositories and
+respect their respective licensing terms.
+
 ## Quick Start
 
 ### Installation & Setup

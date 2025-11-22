@@ -19,21 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-## Additional Notice for Pi-hole Configurations
-
-This repository provides configurations and blocklists for Pi-hole. Please note:
-
-- Use these configurations at your own risk
-- Test in a non-production environment before deploying
-- Blocklists may cause false positives; maintain an allowlist as needed
-- The authors are not responsible for any network disruptions or service interruptions
-- Pi-hole itself is a separate project with its own licensing (see https://pi-hole.net/)
-
-## Third-Party Blocklists
-
-Many of the blocklists referenced in this repository are provided by external sources
-and may have their own licenses. Please review the individual list repositories and
-respect their respective licensing terms.
