@@ -1,0 +1,34 @@
+# Example Basic Configuration
+
+# This is a basic example configuration for Pi-hole
+# Copy this file and customize for your setup
+
+# Network configuration
+ip_address: 10.0.10.50
+dns_port: 53
+
+# Upstream DNS servers
+upstream_dns:
+  primary: 1.1.1.1      # Cloudflare DNS
+  secondary: 1.0.0.1    # Cloudflare DNS (backup)
+
+# DHCP Configuration (optional, disable if using router DHCP)
+dhcp_enabled: false
+dhcp_start: 10.0.10.100
+dhcp_end: 10.0.10.200
+dhcp_gateway: 10.0.10.1
+dhcp_netmask: 255.255.255.0
+
+# Web Interface
+webui_port: 80
+
+# Logging
+log_queries: true
+log_location: /var/log/pihole/
+
+# Performance
+dns_cache: enabled
+max_cache_entries: 10000
+
+# Blocking
+strict_order: true

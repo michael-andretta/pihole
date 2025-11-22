@@ -1,0 +1,60 @@
+# Example Advanced Configuration
+
+# Advanced Pi-hole configuration with DNS-over-HTTPS
+# This example includes security and privacy enhancements
+
+# Network configuration
+ip_address: 10.0.10.50
+dns_port: 53
+
+# Upstream DNS - using encrypted DNS
+upstream_dns:
+  primary: 1.1.1.1              # Cloudflare (with DNSSEC)
+  secondary: 9.9.9.9            # Quad9 (malware/phishing protection)
+
+# DNS over HTTPS configuration
+dns_over_https: enabled
+tls_port: 853
+dot_enabled: true
+
+# DHCP Server (if managing your network's DHCP)
+dhcp_enabled: true
+dhcp_start: 10.0.10.100
+dhcp_end: 10.0.10.250
+dhcp_gateway: 10.0.10.1
+dhcp_netmask: 255.255.255.0
+dhcp_lease_time: 24h
+dhcp_router: 10.0.10.1
+
+# Web Interface
+webui_port: 80
+webui_password_hash: # Set via admin interface
+
+# Logging and Monitoring
+log_queries: true
+log_location: /var/log/pihole/
+log_retention: 30d  # Keep 30 days of logs
+
+# Performance Tuning
+dns_cache: enabled
+max_cache_entries: 50000
+query_timeout: 5s
+rr_cache: 600
+
+# Security Features
+dnssec_enabled: true
+strict_order: true
+rebind_protection: enabled
+
+# Custom DNS Records
+custom_dns:
+  # Add your custom DNS entries here
+  # example.local: 192.168.1.100
+
+# Rate Limiting
+rate_limit: 600/60  # Max 600 queries per 60 seconds
+
+# Blocking
+conditional_forwarding: true
+conditional_forwarding_domain: local
+conditional_forwarding_ip: 10.0.10.1
